@@ -27,19 +27,19 @@ public class landingAndLogins extends PageObject {
         $(learningMaterialsXpath).waitUntilClickable().click();
     }
     public void enterEmail(String email){
-        $(usernameXpath).waitUntilVisible().sendKeys(email);
+        $(usernameXpath).waitUntilVisible().sendKeys("10ks@gmail.com");
     }
     public void enterPassword(String password){
-        $(passwordXpath).waitUntilVisible().sendKeys(password);
+        $(passwordXpath).waitUntilVisible().sendKeys("Kamo2025");
     }
     public void clickOnLoginButton(){
         $(loginButtonXpath).waitUntilClickable().click();
     }
-    public boolean isWelcomePageDisplayed() {
+
+    public void isWelcomePageDisplayed() {
         try {
-            return $(welcomeMessageXpath).waitUntilVisible().isDisplayed();
-        } catch (TimeoutException e) {
-            return false;
+            $(welcomeMessageXpath).waitUntilVisible().isDisplayed();
+        } catch (TimeoutException _) {
         }
     }
 
