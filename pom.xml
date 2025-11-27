@@ -3,13 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.serenitybdd.starter</groupId>
-    <artifactId>cucumber-starter</artifactId>
+    <artifactId>AdvancedWebTesting</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Sample Serenity BDD project using Cucumber</name>
 
     <properties>
+        <serenity.artifact>serenity-html-report</serenity.artifact>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>4.2.22</serenity.version>
         <junit-vintage-engine.version>5.11.4</junit-vintage-engine.version>
@@ -17,7 +18,7 @@
         <cucumber-junit-platform-engine.version>7.20.1</cucumber-junit-platform-engine.version>
         <encoding>UTF-8</encoding>
         <tags></tags>
-        <webdriver.base.url></webdriver.base.url>
+        <webdriver.base.url>https://ndosiautomation.co.za/</webdriver.base.url>
     </properties>
     <dependencies>
         <dependency>
@@ -131,10 +132,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.11.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>24</source>
+                    <target>24</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -144,14 +145,14 @@
                 <configuration>
                     <tags>${tags}</tags>
                     <reports>single-page-html</reports>
-<!--                    <generateFullReport>true</generateFullReport>-->
+                    <!--<generateFullReport>true</generateFullReport>-->
                 </configuration>
                 <dependencies>
-                    <dependency>
-                        <groupId>net.serenity-bdd</groupId>
-                        <artifactId>serenity-single-page-report</artifactId>
-                        <version>${serenity.version}</version>
-                    </dependency>
+<!--                    <dependency>-->
+<!--&lt;!&ndash;                        <groupId>net.serenity-bdd</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <artifactId>${serenity.artifact}</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <version>${serenity.version}</version>&ndash;&gt;-->
+<!--                    </dependency>-->
                 </dependencies>
                 <executions>
                     <execution>
