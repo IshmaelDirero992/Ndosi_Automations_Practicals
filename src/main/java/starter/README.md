@@ -1,4 +1,37 @@
-### Application code
- 
-These packages generally contain application code. 
-If you are writing a reusable test library, you can also place reusable test components such as Page Objects or Tasks here.
+# Ndosi_Automations_Practicals
+
+This file is going to take us step by step on how to set up the project and execution
+
+## Tools needed in this project
+* JDK
+* IntelliJ
+* Selenium
+* TestNg
+* Web driver Manager
+* Extent extentReports
+* Maven
+* Maven Sure fire plugin
+
+## Project Structure
+
+This is the page object model framework, where all the tests are separated in their own pages
+* Java—Contains all the different packages required for the framework
+* extentReports—This package contains classes to create and customize the extent extentReports
+* pagesObjects—This package contains classes for different pages in a project
+* tests—this package contains all the tests classes
+
+
+## Reporting
+
+* The report will be saved under the folder Reports
+* To open the report—you have to launch it with a browser of your choice. Options will be available on the report
+
+## Execution
+
+* This section will explain how to execute the project
+
+* There are two ways one can run this project:
+
+1. The first is to run it directly from the test class.
+2. Can be run on the command line using command mvn test
+
